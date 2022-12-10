@@ -1,0 +1,120 @@
+body{
+    background-color:  hsl(217, 54%, 11%);
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+.container{
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    position: absolute;
+    width: 350px;
+    height: 650px;
+    background-color: hsl(216, 50% 16%);
+    border-radius: 10px;
+    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.7);
+    margin: 20px 450px;
+    font-family: font-family: 'Outfit', sans-serif;
+    ;
+}
+.card-content{
+    padding: 20px;
+    font-size: 18px;
+}
+.image img{
+    width: 100%;
+    border-radius: 10px;
+}
+.overlay img{
+    background-color:  hsl(178, 100%, 50%);
+    background-position: center;
+    padding: 129px;
+    border-radius: 10px;
+    position: absolute;
+    left: 6.3%;
+    top: 3.5%;
+    transition: 2s ease;
+    opacity: 0;
+}
+.overlay img:hover{
+    opacity: 0.5;
+}
+.head{
+    cursor: pointer;
+}
+.card-body{
+    color: #fff;
+}
+.card-body > p{
+    font-weight: 300;
+}
+.card-body h2{
+    transition: 0.5s ease-out;
+}
+.card-body h2:hover{
+    color: hsl(178, 100%, 50%);
+}
+.eutherum-time{
+    display: flex;
+    flex-wrap: wrap;
+}
+.eutherum-time h4{
+    color: hsl(178, 100%, 50%);
+}
+.eutherum-time p{
+    margin-left: 100px;
+    font-weight: 300;
+    font-size: 18px;
+}
+.authorization{
+    display: flex;
+    margin-top: 20px;
+}
+.authorization img{
+    width: 60px;
+}
+.authorization p{
+    margin-left: 30px;
+    font-weight: 300;
+}
+.authorization p span{
+    font-weight: 500;
+    color:  hsl(0, 0%, 100%);
+    transition: 0.5s ease-out;
+}
+.authorization p span:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+@media screen and (max-width: 600){
+    .card{
+        position: absolute;
+        width: 350px;
+        height: 550px;
+        background-color: hsl(216, 50% 16%);
+        border-radius: 10px;
+        box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.7);
+        padding: 0;
+        margin: 0;
+    }
+    .overlay img{
+        background-color:  hsl(178, 100%, 50%);
+        background-position: center;
+        padding: 129px;
+        border-radius: 10px;
+        position: absolute;
+        left: 2.3%;
+        top: 3.5%;
+        transition: 2s ease;
+        opacity: 0;
+    }
+    body{
+        max-height: 600px;
+        padding: 0;
+    }
+    .container{
+        padding: 20px;
+    }
+}
